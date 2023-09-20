@@ -1,0 +1,22 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "epoch-charting": "^0.8.4",
+    "jquery-confirm": "^3.3.2",
+    "m-popup": "^1.0.10",
+    "socket.io": "^4.7.2",
+    "startbootstrap-agency": "^5.2.2",
+    "startbootstrap-sb-admin": "^7.0.7",
+    "startbootstrap-sb-admin-2": "^4.0.7",
+    "vanillatop": "^1.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
