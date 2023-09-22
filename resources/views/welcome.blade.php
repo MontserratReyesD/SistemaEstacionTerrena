@@ -343,7 +343,10 @@
       <div class="rounded-full border-8 border-primary shadow-xl">
         <img
           src="{{asset('/assets/img/logo-equipo.png')}}"
-          class="h-50 rounded-full h-40"
+          width="900"
+          height="500"
+          top=50%;
+          
           alt="logo"
         />
       </div>

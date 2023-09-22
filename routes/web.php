@@ -29,33 +29,7 @@ use App\Http\Controllers\monitorController;
 Route::get('/', function () {
     return view('welcome');
 });
-//Recuerda el use al inicio para que encuentre al controlador
-//Ejemplo: use App\Http\Controllers\formularioController;
-/*
-Route::get('/productos', [formularioController::class, 'index']);//Recuerda el use al inici
-Route::get('/form', [formularioController::class, 'create']);
-Route::post('/form/save', [formularioController::class, 'store'])->name('producto.guardar');
 
-Route::get('/consumo/crcind/demo', [soapController::class, 'consumirServicio']);//Recuerda el use al inici
-
-Route::get('/cliente/temperatura', [clienteTemperaturaSOAPController::class, 'consumirTemperatura']);
-
-Route::any('/servidor/temperatura', function() {
-    //$this->middleware('verifyCsrfToken'); 
-    $soapServer = new SoapServer('http://127.0.0.1/misServiciosSOAP/ctof.wsdl', array('uri' => 'http://localhost/telepuertoV1L10/public/servidor/temperatura'));
-    $soapServer->setClass(servidorTemperaturaSOAPController::class);
-    $soapServer->handle();
-});
-Route::get('/cliente/py', [pySOAPController::class, 'consumirServicioPy']);
-Route::get('/crer/wsdl/ajua', [creadorWSDL::class, 'crearWSDL']);
-//Consumo REST
-Route::get('/gatos/aletorios', [consumoRestController::class, 'index'])->name('aletorios');;
-Route::get('/gatos/favoritos', [consumoRestController::class, 'favoritos'])->name('album');;
-
-//API REST 
-Route::get('/index', [PostController::class, 'index']);
-*/
-    //Tablero
 Route::get('/boceto', [dashboardController::class, 'index'])->name('tablero');
 Route::get('/login', function () {
     return "este es un login...";
@@ -82,13 +56,3 @@ Route::get('/clima', function () {
     return view('graphics.extras.clima');
 })->name('datos.clima');
 
-//Usuarios
-/*
-Route::group(['prefix' => 'usuarios','middleware' => ['auth']], function() {
-    Route::get('mostrar', ['as' => 'usuario.mostrar', 'uses' => 'UserController@index']);
-    Route::get('nuevo', ['as' => 'usuario.nuevo', 'uses' => 'UserController@create']);
-    Route::post('guardar', ['as' => 'usuario.guardar', 'uses' => 'UserController@store']);
-    Route::get('{id}/modificar', ['as' => 'usuario.modify', 'uses' => 'UserController@edit']);
-    Route::post('{id}/update', ['as' => 'usuario.update', 'uses' => 'UserController@update']);
-});
-*/
