@@ -31,7 +31,13 @@ socket.on('temp', function(dato) { //As a temp data is received
         let sensor = JSON.parse((dato.temp));
         console.log(sensor);
         //document.getElementById('date').innerHTML = dato.date; //update the date
-        //document.getElementById('time').innerHTML = dato.time; //update the date        
+
+        //document.getElementById('time').innerHTML = dato.time; //update the date 
+        
+        document.getElementById('presion').innerHTML = sensor.pressure;
+
+        presionDisplay.innerHTML = (sensor.ax/101300).toFixed(2);
+
         buildChart(chartTemp, dato, sensor.temperatura,15);    
         let temp = parseFloat(sensor.temperatura);
         let hume = parseFloat(sensor.humedad);

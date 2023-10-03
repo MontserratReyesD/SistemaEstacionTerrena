@@ -48,6 +48,10 @@
   <div class="mPopup" id="sample1" style="background: transparent; border: none;">
     <img src="{{url('image/loader7.gif?v=1.0')}}" style=" margin-left: auto; margin-right: auto;display: block;" width="45%"/>
   </div>
+
+  <div class="row">
+    @include("graphics.monitor.camera")
+  </div>
   <!--
   <div class="row">
   </div>

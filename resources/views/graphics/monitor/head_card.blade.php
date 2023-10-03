@@ -56,7 +56,9 @@
         <div class="card-body">
           <div class="row align-items-center">
             <div class="col mr-2">
-              <div class="text-xs text-white font-weight-bold text-danger text-uppercase mb-1">Presión</div>
+             0 <!--<div class="text-xs text-white font-weight-bold text-danger text-uppercase mb-1">Presión</div>-->
+              <div class="text-xs text-white font-weight-bold text-danger text-uppercase mb-1">Presión: BMP280</div>
+              <div class="h5 mb-0 text-white font-weight-bold text-gray-800" id="presion"> </div>
               <div class="h5 mb-0 font-weight-bold text-gray-800" id="presion"></div>
             </div>
             <div class="col-auto">

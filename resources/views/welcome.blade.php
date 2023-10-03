@@ -89,7 +89,7 @@
     x-data="{ mobileMenu: false }"
   >
     
-    <div id="main" class="relative">
+   <div id="main" class="relative">
       <div
   x-data="{
     triggerNavItem(id) {
@@ -258,8 +258,7 @@
         <span
           @click="triggerMobileNavItem('#services')"
           class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Acerca de</span
-        >
+          >Acerca de</span>
         
       </li>
       
@@ -275,10 +274,10 @@
       
       <li class="py-2">
         
-        <span
-          @click="triggerMobileNavItem('#clients')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Monitoreo de Datos</span
+        <a
+          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white" 
+          href="{{route('graficas')}}"
+            >Monitoreo de Datos</a
         >
         
       </li>
@@ -343,9 +342,7 @@
       <div class="rounded-full border-8 border-primary shadow-xl">
         <img
           src="{{asset('/assets/img/logo-equipo.png')}}"
-          width="900"
-          height="500"
-          top=50%;
+          width="900"; height="500"; top=50%;
           
           alt="logo"
         />
@@ -842,8 +839,8 @@
           class="mx-auto transform transition-all hover:scale-105 md:mx-0"
         >
           <img
-            src="/assets/img/portfolio-apple.jpeg"
-            class="w-full shadow"
+            src="{{asset('/assets/img/cohete1.jpg')}}"
+            width="300" height="350"
             alt="Cohete 1"
           />
         </a>
@@ -852,8 +849,8 @@
         class="mx-auto transform transition-all hover:scale-105 md:mx-0"
       >
         <img
-          src="/assets/img/portfolio-stripe.jpeg"
-          class="w-full shadow"
+          src="{{asset('/assets/img/cohete2.jpg')}}"
+          width="300" height="350"
           alt="Cohete 2"
         />
       </a>
